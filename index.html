@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangapill</title>
+    <style>
+        html {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+            background-color: rgb(18, 19, 24);
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: #0070f3;
+        }
+        /* .container{
+            padding-left: 15%;
+        } */
+        .top {
+            display: flex;
+            width: 100%;
+            height: 44px;
+            /* justify-content: space-between; */
+            /* border: 1px solid red; */
+        }
+
+        .manga {
+            display: flex;
+            width: 100%;
+            height: 20%;
+            color: white;
+            padding-left: 14%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
+
+        .pill {
+            color: #0070f3;
+        }
+
+        .manga div {
+            margin-left: 1%;
+        }
+
+        .chapters{
+            width: 100vw;
+            height: 225px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 15%;
+            flex-wrap: wrap;
+            background-color: #212328;
+            /* align-content: center; */
+        }
+        /* .pic{
+            display: block;
+            width: 100px;
+        } */
+        .images{
+            background-color: #212328;
+            display: grid;
+            grid-template-columns: repeat(8, 100px);
+            width: 1000px;
+            gap: 3%;
+        }
+        .images img{
+            /* margin-left: 1%; */
+            width: 110px;
+            height: 7rem;
+        }
+        .jungle{
+            color: #8b949e;
+            height: 10px;
+            font-size: 10px;
+        }
+        .latest{
+            padding-left: 15%;
+            display: grid;
+            grid-template-columns: 740px 300px;
+            grid-template-rows: 50px 1000px;
+            grid-auto-flow: column;
+            height: 1230px;
+        }
+        .newch{
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(6, 130px);
+            gap: 7%;
+            height: 1000px;
+            width: 650px;
+        }
+        .newch img{
+            width: 130px;
+            height: 130px;
+        }
+        h4{
+            width: 650px;
+        }
+        .news{
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(8, 50px);
+        }
+        .news div{
+            border: 1px solid #404044;
+            padding: 1%;
+        }
+        .trending{
+            padding-left: 15%;
+        }
+        .TM{
+            display: grid;
+            grid-template-rows: 200px 200px;
+            grid-template-columns: repeat(5, 200px);
+            /* font-size: 69px; */
+        }
+        .TM img{
+            width: 180px;
+            height: 140px;
+        }
+        .TM .jungle{
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="top">
+            <div class="manga">
+                <div>manga<span class="pill">pill</span></div>
+                <div>search</div>
+                <div>new mangas</div>
+                <div>recent chapters</div>
+                <div>Missing Manga</div>
+                <div>Contact</div>
+                <div>Privacy Policy</div>
+            </div>
+        </header>
+        <div class="chapters">
+            <h4>Featured chapters</h4>
+            <div class="images">
+                <div class="pic">
+                    <img src="/m/8000.jpeg" alt="">
+                    <div>#5</div>
+                    <div class="jungle">Negai no Astro</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/mha.jpeg" alt="">
+                    <div>#423</div>
+                    <div class="jungle">Boku no hero academia</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/jjk.jpeg" alt="">
+                    <div>#260</div>
+                    <div class="jungle">Jujutsu kaisen</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/EZ.jpeg" alt="">
+                    <div>#287</div>
+                    <div class="jungle">Eden Zero</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/KoA.jpeg" alt="">
+                    <div>#149</div>
+                    <div class="jungle">Mokushiroku no Yonkishi</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/kdom.jpeg" alt="">
+                    <div>#795</div>
+                    <div class="jungle">Kingdom</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/OP.jpeg" alt="">
+                    <div>#1114</div>
+                    <div class="jungle">One Piece</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/VS.jpeg" alt="">
+                    <div>#210</div>
+                    <div class="jungle">Vinland Saga</div>
+                </div>
+            </div>
+        </div>
+        <div class="latest">
+            <h4>New chapters</h4>
+            <div class="newch">
+                <div class="pic">
+                    <img src="/m/7800.jpeg" alt="">
+                    <div>#33</div>
+                    <div class="jungle">A Martial Master Wakes Up as a Concubine</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/Flaw.jpeg" alt="">
+                    <div>#40</div>
+                    <div class="jungle">Flawless</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/mis.jpeg" alt="">
+                    <div>#111</div>
+                    <div class="jungle">Mistake</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/HSN.jpeg" alt="">
+                    <div>#58</div>
+                    <div class="jungle">My husband changes every night</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/NYT.jpeg" alt="">
+                    <div>#42</div>
+                    <div class="jungle">Not Your Typical Reincarnation Story</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/ogo.jpeg" alt="">
+                    <div>#389</div>
+                    <div class="jungle">Odd girl out</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/6179.jpeg" alt="">
+                    <div>#117</div>
+                    <div class="jungle">Philia Rosé: The Prophecy of the Crown of Thorns</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/RM.jpeg" alt="">
+                    <div>#50</div>
+                    <div class="jungle">Reawakened Man</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/player.jpeg" alt="">
+                    <div>#192</div>
+                    <div class="jungle">The Advanced Player of the Tutorial Tower</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/dog.jpeg" alt="">
+                    <div>#82</div>
+                    <div class="jungle">The dog diaries</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/solo.jpeg" alt="">
+                    <div>#135</div>
+                    <div class="jungle">Solo Spell Caster</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/6331.jpeg" alt="">
+                    <div>#104</div>
+                    <div class="jungle">The tax reaper</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/tnd.jpeg" alt="">
+                    <div>#59</div>
+                    <div class="jungle">To not die</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/zero.jpeg" alt="">
+                    <div>#246</div>
+                    <div class="jungle">Zero game</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/amai.jpeg" alt="">
+                    <div>#300</div>
+                    <div class="jungle">Amai Seikatsu</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/angel.jpeg" alt="">
+                    <div>#334</div>
+                    <div class="jungle">Angel heart</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/death.jpeg" alt="">
+                    <div>#100</div>
+                    <div class="jungle">Death March kara Hajimaru Isekai Kyousoukyoku</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/mushoku.jpeg" alt="">
+                    <div>#100</div>
+                    <div class="jungle">Muhoku tensei</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/familia.jpeg" alt="">
+                    <div>#62</div>
+                    <div class="jungle">Game obu Familia - Family Senki</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/meshi.jpeg" alt="">
+                    <div>#58</div>
+                    <div class="jungle">Isekai cheat survival Meshi</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/1969.jpeg" alt="">
+                    <div>#49</div>
+                    <div class="jungle">Isekai de Tochi wo Katte Noujou wo Tsukurou</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/hige.jpeg" alt="">
+                    <div>#57</div>
+                    <div class="jungle">Hige wo Soru. Soshite Joshikousei wo Hirou.</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/eris.jpeg" alt="">
+                    <div>#50</div>
+                    <div class="jungle">Holy Grail of Eris</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/ruin.jpeg" alt="">
+                    <div>#49</div>
+                    <div class="jungle">Hametsu no Oukoku</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/SSS.jpeg" alt="">
+                    <div>#115</div>
+                    <div class="jungle">SSS class revival hunter</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/bloom.jpeg" alt="">
+                    <div>#29</div>
+                    <div class="jungle">Hanninmae no Koibito</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/bocchi.jpeg" alt="">
+                    <div>#77</div>
+                    <div class="jungle">Bocchi the rock</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/boruto.jpeg" alt="">
+                    <div>#10</div>
+                    <div class="jungle">Boruto: two blue vortex</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/Dan.jpeg" alt="">
+                    <div>#153</div>
+                    <div class="jungle">Dandadan</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/Ooze.jpeg" alt="">
+                    <div>#9</div>
+                    <div class="jungle">Goze Hotaru</div>
+                </div>
+            </div>
+            <h4>Latest news</h4>
+            <div class="news">
+                <div><a href="https://mangapill.com/news/24/akira-toriyama-r-i-p">Akira Toriyama R.I.P</a></div>
+                <div><a href="https://mangapill.com/news/23/new-updates">New Updates</a></div>
+                <div><a href="https://mangapill.com/news/22/images-not-loading-error-on-2023-06-05-2023-06-06">Images Not Loading Error On 2023/06/05 & 2023/06/06</a></div>
+                <div><a href="https://mangapill.com/news/21/2023-first-update-and-chapter-selector-ads-overlay-bug-fixed">2023 First Update And Chapter Selector Ads Overlay Bug Fixed</a></div>
+                <div><a href="https://mangapill.com/news/20/update-regarding-downtime">Update Regarding Downtime</a></div>
+                <div><a href="https://mangapill.com/news/19/faq-and-september-update">FAQ and September Update</a></div>
+                <div><a href="https://mangapill.com/news/18/keyboard-shortcuts-support-landed">Keyboard shortcuts support landed</a></div>
+            </div>
+        </div>
+        <div class="trending">
+            <h4>Trending Manga</h4>
+            <div class="TM">
+                <div class="pic">
+                    <img src="/m/GOAT.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">Berserk</div>
+                </div>
+                
+                <div class="pic">
+                    <img src="/m/OP.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">One Piece</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/chain.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">Chainsaw man</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/Hunter x hunter.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">Hunter x hunter</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/SBR.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">Jojo part 7</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/FMA.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">Fullmetal Alchemist</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/SNK.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">Shingeki no kyojin</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/punpun.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">Oyasumi punpun</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/gintama.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">gintama</div>
+                </div>
+                <div class="pic">
+                    <img src="/m/black.jpeg" alt="">
+                    <!-- <div>#44</div> -->
+                    <div class="jungle">Black clover</div>
+                </div>
+
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>
