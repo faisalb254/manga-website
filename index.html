@@ -1,121 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangapill |Best Manga Website ever|</title>
+    <title>Mangapill</title>
     <style>
-        html {
+        html{
             font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
             background-color: rgb(18, 19, 24);
             color: white;
+            height: 100vh;
+            width: 100vw;
         }
         a{
             text-decoration: none;
             color: #0070f3;
         }
-        /* .container{
-            padding-left: 15%;
-        } */
-        .top {
-            display: flex;
-            width: 100%;
+        .screen{
             height: 44px;
-            /* justify-content: space-between; */
-            /* border: 1px solid red; */
+            padding-left: 15%;
         }
-
-        .manga {
-            display: flex;
-            width: 100%;
-            height: 20%;
-            color: white;
-            padding-left: 14%;
+        .screen div{
+            float: left;
             margin-top: 1%;
+            display: inline;
+            padding: 5px;
             font-size: 20px;
         }
-
         .pill {
             color: #0070f3;
         }
-
-        .manga div {
-            margin-left: 1%;
-        }
-
-        .chapters{
-            width: 100vw;
-            height: 225px;
-            display: flex;
-            flex-direction: column;
+        .featured{
+            margin-top: 1%;
+            background-color: #212328;
+            text-align: left;
+            padding-top: 1%;
             padding-left: 15%;
-            flex-wrap: wrap;
-            background-color: #212328;
-            /* align-content: center; */
-        }
-        /* .pic{
-            display: block;
-            width: 100px;
-        } */
-        .images{
-            background-color: #212328;
-            display: grid;
-            grid-template-columns: repeat(8, 100px);
-            width: 1000px;
-            gap: 3%;
-        }
-        .images img{
-            /* margin-left: 1%; */
+        } 
+        .featured img{
             width: 110px;
             height: 7rem;
+        }
+        .images{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .images .pic{
+            padding: 1%;
         }
         .jungle{
             color: #8b949e;
             height: 10px;
             font-size: 10px;
         }
-        .latest{
+        .phone{
             padding-left: 15%;
-            display: grid;
-            grid-template-columns: 740px 300px;
-            grid-template-rows: 50px 1000px;
-            grid-auto-flow: column;
-            height: 1230px;
+            display: none;
+            flex-direction: row;
         }
-        .newch{
-            display: grid;
-            grid-template-columns: repeat(5, 100px);
-            grid-template-rows: repeat(6, 130px);
-            gap: 7%;
-            height: 1000px;
-            width: 650px;
+        .drop{
+            width: 5%;
+        }
+        .content{
+            display: none;
+        }
+        .drop:hover .content{
+            display: block;
+        }
+
+        .latest{
+            margin-top: 1%;
+            padding-left: 15%;
+            width: 55%;
+            height: 84rem;
         }
         .newch img{
             width: 130px;
             height: 130px;
         }
-        h4{
-            width: 650px;
+        .newch{
+            margin-top: 1%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 95px);
+            grid-template-rows: repeat(auto-fit, 130px);
+            gap: 7%;
+            height: 100%;
+            width: 100%;
         }
         .news{
+            float: right;
             display: grid;
-            grid-template-columns: 300px;
-            grid-template-rows: repeat(8, 50px);
+            grid-template-columns: 23vw;
+            grid-template-rows: 25px repeat(5, 50px);
+            position: relative;
+            bottom: 84rem; 
+            right: 100px;
         }
-        .news div{
+        .innews div{
             border: 1px solid #404044;
             padding: 1%;
         }
         .trending{
             padding-left: 15%;
         }
-        .TM{
+         .TM{
             display: grid;
-            grid-template-rows: 200px 200px;
-            grid-template-columns: repeat(5, 200px);
-            /* font-size: 69px; */
-        }
+            grid-template-rows: repeat(auto-fit, 200px);
+            grid-template-columns: repeat(auto-fit, 200px); 
+        } 
+
         .TM img{
             width: 180px;
             height: 140px;
@@ -123,13 +117,60 @@
         .TM .jungle{
             font-size: 15px;
         }
+
+        @media only screen and (max-width: 1305px) {
+            .screen{
+                display: none;
+                padding: none;
+            }
+            .phone{
+                display: flex;
+                padding: 0%;
+            }
+            .images .pic{
+                padding: 6%;
+            }
+            .featured{
+                padding-top: 3%;
+                padding-left: 8%;
+            }
+            .latest{
+                padding-left: 10%;
+                width: 81%;
+                height: 2850px;
+            }
+            .newch{
+                gap: 2% 24%;
+            }
+            .news{
+                padding-left: 10%;
+                grid-template-columns: 70vw;
+                float: left;
+                bottom: 0px;
+                right: 0px;
+                align-content: end;
+            }
+            .trending{
+                margin-top: 41vh;
+            }
+            .TM{
+                gap: 4% 10%;
+            }
+        }
+        @media only screen and (max-width:1305px) and (min-width:693px) {
+            .latest{
+                height: 1720px;
+            }
+            .trending{
+                margin-top: 32vh;
+            }
+        }
     </style>
 </head>
-
 <body>
     <div class="container">
         <header class="top">
-            <div class="manga">
+            <div class="screen">
                 <div>manga<span class="pill">pill</span></div>
                 <div>search</div>
                 <div>new mangas</div>
@@ -138,9 +179,23 @@
                 <div>Contact</div>
                 <div>Privacy Policy</div>
             </div>
+            <div class="phone">
+                <div class="drop">
+                    <span>≈</span>
+                    <div class="content">
+                        <div>search</div>
+                        <div>new mangas</div>
+                        <div>recent chapters</div>
+                        <div>Missing Manga</div>
+                        <div>Contact</div>
+                        <div>Privacy Policy</div>
+                    </div>
+                </div>
+                <div>manga<span class="pill">pill</span></div>
+            </div>
         </header>
-        <div class="chapters">
-            <h4>Featured chapters</h4>
+        <div class="featured">
+            <div> <b>Featured Chapters</b></div>
             <div class="images">
                 <div class="pic">
                     <img src="/m/8000.jpeg" alt="">
@@ -185,7 +240,7 @@
             </div>
         </div>
         <div class="latest">
-            <h4>New chapters</h4>
+            <div><b>New Chapter</b></div>
             <div class="newch">
                 <div class="pic">
                     <img src="/m/7800.jpeg" alt="">
@@ -338,75 +393,64 @@
                     <div class="jungle">Goze Hotaru</div>
                 </div>
             </div>
-            <h4>Latest news</h4>
-            <div class="news">
+        </div>
+        <div class="news">
+            <span>Latest news</span>
+            <div class="innews">
                 <div><a href="https://mangapill.com/news/24/akira-toriyama-r-i-p">Akira Toriyama R.I.P</a></div>
-                <div><a href="https://mangapill.com/news/23/new-updates">New Updates</a></div>
-                <div><a href="https://mangapill.com/news/22/images-not-loading-error-on-2023-06-05-2023-06-06">Images Not Loading Error On 2023/06/05 & 2023/06/06</a></div>
-                <div><a href="https://mangapill.com/news/21/2023-first-update-and-chapter-selector-ads-overlay-bug-fixed">2023 First Update And Chapter Selector Ads Overlay Bug Fixed</a></div>
-                <div><a href="https://mangapill.com/news/20/update-regarding-downtime">Update Regarding Downtime</a></div>
-                <div><a href="https://mangapill.com/news/19/faq-and-september-update">FAQ and September Update</a></div>
-                <div><a href="https://mangapill.com/news/18/keyboard-shortcuts-support-landed">Keyboard shortcuts support landed</a></div>
-            </div>
+                    <div><a href="https://mangapill.com/news/23/new-updates">New Updates</a></div>
+                    <div><a href="https://mangapill.com/news/22/images-not-loading-error-on-2023-06-05-2023-06-06">Images Not Loading Error On 2023/06/05 & 2023/06/06</a></div>
+                    <div><a href="https://mangapill.com/news/21/2023-first-update-and-chapter-selector-ads-overlay-bug-fixed">2023 First Update And Chapter Selector Ads Overlay Bug Fixed</a></div>
+                    <div><a href="https://mangapill.com/news/20/update-regarding-downtime">Update Regarding Downtime</a></div>
+                    <div><a href="https://mangapill.com/news/19/faq-and-september-update">FAQ and September Update</a></div>
+                    <div><a href="https://mangapill.com/news/18/keyboard-shortcuts-support-landed">Keyboard shortcuts support landed</a></div>
+                </div>
         </div>
         <div class="trending">
             <h4>Trending Manga</h4>
             <div class="TM">
                 <div class="pic">
                     <img src="/m/GOAT.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">Berserk</div>
                 </div>
-                
                 <div class="pic">
                     <img src="/m/OP.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">One Piece</div>
                 </div>
                 <div class="pic">
                     <img src="/m/chain.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">Chainsaw man</div>
                 </div>
                 <div class="pic">
                     <img src="/m/Hunter x hunter.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">Hunter x hunter</div>
                 </div>
                 <div class="pic">
                     <img src="/m/SBR.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">Jojo part 7</div>
                 </div>
                 <div class="pic">
                     <img src="/m/FMA.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">Fullmetal Alchemist</div>
                 </div>
                 <div class="pic">
                     <img src="/m/SNK.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">Shingeki no kyojin</div>
                 </div>
                 <div class="pic">
                     <img src="/m/punpun.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">Oyasumi punpun</div>
                 </div>
                 <div class="pic">
                     <img src="/m/gintama.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">gintama</div>
                 </div>
                 <div class="pic">
                     <img src="/m/black.jpeg" alt="">
-                    <!-- <div>#44</div> -->
                     <div class="jungle">Black clover</div>
                 </div>
-
             </div>
         </div>
-    </div>    
+    </div>
 </body>
-
 </html>
